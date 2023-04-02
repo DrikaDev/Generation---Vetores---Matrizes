@@ -1,12 +1,14 @@
+/*Dado um vetor contendo 10 números inteiros não ordenados, 
+construa um algoritmo que consiga ordenar o vetor em ordem decrescente, 
+como mostra o exemplo abaixo:
+Entrada: vetor 2-5-1-3-4-9-7-8-10-6
+Saída: vetor 10-9-8-7-6-5-4-3-2-1*/
+
 programa
 {
 	funcao inicio()
 	{
 		inteiro vet [10] = {2, 5, 1, 3, 4, 9, 7, 8, 10, 6}, x, copia, troca
-
-		para (x = 0; x < 10; x++){
-			escreva (vet[x], " - ")
-		}
 		
 		faca{
 			troca = 0	
@@ -21,10 +23,9 @@ programa
 			}
 			
 		}enquanto(troca == 1)
-		escreva ("\n")
 		
-		para (x = 0; x < 10; x++){
-			escreva (vet[x], " - ")
+		para (x = 9; x < 10; x--){
+			escreva (vet[x], " | ")
 		}
 	}
 }
@@ -33,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 452; 
+ * @POSICAO-CURSOR = 602; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
